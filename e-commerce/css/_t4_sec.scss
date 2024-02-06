@@ -1,0 +1,49 @@
+.t4_sec {
+  padding: 48px 130px 48px 130px;
+  width: 100%;
+}
+
+.t4_title {
+  display: flex;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  padding-bottom: 48px;
+  position: relative;
+}
+
+.t4_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 24px;
+}
+.card {
+  position: relative;
+}
+.card p {
+  font-size: 1.5rem;
+}
+.t4_top_text {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  padding: 4px 14px;
+  border-radius: 4px;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .t4_sec {
+    padding: 40px 32px 40px 32px;
+    width: 100%;
+  }
+  .t4_title {
+    justify-content: center;
+  }
+
+  .t4_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}

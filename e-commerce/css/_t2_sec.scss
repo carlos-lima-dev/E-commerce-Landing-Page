@@ -1,0 +1,151 @@
+.t2_sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+  padding: 50px 0px 50px 130px;
+}
+.t2_sec__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.dots {
+  padding-right: 160px;
+}
+.dot {
+  cursor: pointer;
+  padding: 5px;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+  border: 1px solid black;
+}
+.all_cards {
+  display: flex;
+  gap: 24px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-size: 1.6rem;
+}
+.all_cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  background-color: #f3f5f7;
+}
+
+.card_button {
+  display: flex;
+  justify-content: center;
+  padding: 0px 16px 16px 16px;
+}
+.card_button button {
+  width: 230px;
+  height: 46px;
+  padding: 8px 24px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.04);
+  background-color: #141718;
+  color: white;
+  border-radius: 8px;
+}
+
+.card_top__text {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 16px 0px 16px;
+}
+
+.card_top__text p {
+  background-color: white;
+  padding: 4px 14px;
+  border-radius: 4px;
+}
+.card_top__text span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  font-weight: 600;
+  padding-top: 12px;
+  background-color: white;
+}
+.card_stars {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.price_font {
+  font-size: 1.4rem;
+}
+
+.card img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .t2_sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    padding: 20px 0px 20px 32px;
+  }
+  .t2_sec__title {
+    display: flex;
+    font-size: 3.4rem;
+    width: 311px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dots {
+    padding-right: 0px;
+  }
+  .card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 230px;
+    flex-shrink: 0;
+  }
+  .all_cards {
+    gap: 16px;
+  }
+}
